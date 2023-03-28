@@ -11,7 +11,6 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json ./
 COPY postcss.config.js ./
 COPY tailwind.config.js ./
-COPY yarn.lock ./
 RUN npm install --silent
 RUN npm install react-scripts@3.4.1 -g --silent
 
